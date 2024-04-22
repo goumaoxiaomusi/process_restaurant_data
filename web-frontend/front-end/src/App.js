@@ -1,15 +1,15 @@
-import Home from './components/Home'
-import Navigator from './components/Navigator'
-import PageTurner from './components/PageTurner'
 import 'bootstrap/scss/bootstrap.scss'
 
 function App() {
+  //This controls which page to go true
+  const isLanding = true;
+
+
   return (
    <>
-   <Navigator />
-   <Home />
-   <PageTurner />
-   
+  
+   {isLanding ? <span>This is the landing page</span>: <span>This is the second page</span>}
+  
    </>
   );
 }
