@@ -1,0 +1,42 @@
+.right-aligned-stack {
+    padding: 1rem 0rem 1rem 1rem;
+    display:flex;
+    width: 97%;       
+    justify-content: end;
+    
+}
+
+.custom-control {
+    background-color: #F5F5F5;
+    width: 11.8rem;
+    height:2.5rem;
+    font-size: 0.8rem;
+  }
+
+.custom-select{
+    font-size: 0.8rem;
+    width: 9rem;
+    height:2.5rem;
+    color:#979797;
+}
+
+.custom-button{
+    background-color: #FF8000;
+    color: white; 
+    border-color: #FF8000; 
+    transition: background-color 0.3s, color 0.3s; 
+    font-size: 0.8rem;
+    width: 6.25rem;
+    height:2.5rem;
+}
+
+.custom-button:hover {
+    background-color: #FFA64C; 
+    color: white;
+    border-color: #FFA64C; 
+}
+
+
+
+
+  
