@@ -1,3 +1,12 @@
 .navbar-custom{
     background-color: #FF8000;
+    height:3rem;
+}
+
+.navbar-brand img {
+    width: 12.25rem;  /* Custom width */
+    height: 1.75rem;    /* Custom height */
+    position: relative;
+    top: -0.2rem;        /* Adjust position relative from top */
+    left: -4rem;       /* Adjust position relative from left */
 }

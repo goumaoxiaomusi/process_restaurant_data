@@ -11,8 +11,7 @@ export default function Navigator(){
             <img
               onClick={() => navigate('/landing')}
               src="./icons/header.jpg"
-              style={{ width: '14.3rem', height: '2rem' }}
-              className="d-inline-block align-top"
+              className="d-inline-block align-left"
               alt="Just Eat logo"/>
                 </a>
             </nav>

@@ -10,19 +10,18 @@ export default function Item({firstPart, secondPart}){
         <Stack >
         {items && items.map(item => (
             <div className="restaurant" key={index} >
-                {index = index -1}
             <Col>
                 <Row>
                 <div className="d-flex align-items-center">
                 {item.name} 
                 {item.cuisines && item.cuisines.map(cuisine => (
-                    <Badge bg="info" className="ms-2" key={index}>{cuisine.name}</Badge>
+                    <Badge pill bg="light" className="custom-badge" key={index}>{cuisine.name}</Badge>
                 ))}
               </div>
                 </Row>
-                <Row>{item.address.firstLine}, {item.address.city} </Row>
+                <Row>{"📍"}{item.address.firstLine}, {item.address.city} </Row>
             </Col>
-            <Col>{item.rating.starRating}</Col>
+            <Col>{"⭐"}{item.rating.starRating}</Col>
         </div>
         ))}
         </Stack>     

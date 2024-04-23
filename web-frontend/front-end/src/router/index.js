@@ -1,13 +1,13 @@
-import Landing from "../pages/landing-page"
 import Result from "../pages/result-page"
 import NotFound from "../pages/not-found"
-import {createBrowserRouter} from 'react-router-dom'
+import {createBrowserRouter,Navigate} from 'react-router-dom'
+
 
 const router = createBrowserRouter([
-    {
-       path:'/landing' ,
-       element: <Landing />
-    },
+   {
+      path: '/',
+      element: <Navigate replace to="/result" />  // Redirect from root to /result
+  },
     {
         path:'/result' ,
         element: <Result />
