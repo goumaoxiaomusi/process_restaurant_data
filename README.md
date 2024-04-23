@@ -1,35 +1,31 @@
 
 # JustEatTakeAway Web Assessment
 
-This project fetch restaurant data from a provided API https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{postcode}, filter the data received,
-leaving and displaying only with the name, addresss, cuisines, and rating of the restaurants. 
-
-{postcode} can be replaced by a valid UK postcode. In this project, I chose to use RM77EX as the postcode.
-This project consists of a front end and a back end. The front end is written in react and the back end is constructed with java springboot framework.
+The project consists of a front end developed in React and a back end built using the Java Spring Boot framework.
+This project retrieves restaurant data from the JustEat API at https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{postcode}. 
+It filters the data to display only the name, address, cuisines, and rating of the restaurants. In this example, the postcode RM77EX is used. The postcode can be changed. Details seen in the following parts. 
 
 **You can check out how data is displayed in the repository with "resultPageDemo.png" image.**
 
 
 
 ## Prerequisites
-1. Node.js: Download & Install Node.js and the npm package manager.
-2. Java Development Kit (JDK): You need JDK 17 or above to run the backend service. Download JDK 17+. Here is a address that you can download suitable JDK:
-https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
-3. If you are a Unix system user, please check if the front end files are executable. Here is what you can possibly do :chmod +x ./node_modules/.bin/react-scripts
+1. Node.js: Download and install Node.js along with npm (Node Package Manager).
+2. Java Development Kit (JDK): The backend service requires JDK 17 or higher. Download JDK 17+ from Oracle's JDK Archive.
+3. Unix Systems: Ensure the front-end files are executable. You can run the following command: chmod +x ./node_modules/.bin/react-scripts.
 
 # Getting Started
 These instructions will get your copy of the project up and running on your local machine for development and testing purposes.
 ## Installing
-First, clone the repository to your local machine:
+Clone the repository to your local machine using the following commands:
+
 git clone https://github.com/goumaoxiaomusi/process_restaurant_data.git
-cd where-you-store-this-project
+cd path-to-your-project-directory
 
 ### Setting up the Front-End
-Navigate to the front-end directory:
+Navigate to the front-end directory and install the necessary packages:
+
 cd web-frontend/front-end
-
-Install the necessary packages:
-
 npm install
 
 
@@ -42,33 +38,26 @@ Ensure the backend.jar file is in your directory.
 To start the back-end service, use the following command:
 
 java -jar backend.jar
-This will start the back-end service, typically accessible on http://localhost:8080/restaurant
+
+This command starts the back-end service, typically accessible at http://localhost:8080/restaurant.
 
 ### Starting the Front-End
-Befoer you start to run the front end, ensure that the back end is running.
-In the front-end directory, run the following command to start the front-end service:
+Ensure the back end is running before starting the front end. In the front-end directory, use the following command to start the service:
 
 cd web-frontend/front-end
 npm run start
 
-This will compile and start the front-end part of the application on http://localhost:3000.
-
-If your web browser does not automatically start, then after you type in npm run start and see "successfully compiled" in your terminal,
-please open your browser and type in http://localhost:3000 or http://localhost:3000/result. This will lead you to the page that display the content.
-Entering any other path can lead to 404 not found page such as http://localhost:3000/a.
+This will compile and launch the front-end application on http://localhost:3000. If your web browser does not automatically open, manually enter http://localhost:3000 or http://localhost:3000/result in your browser's address bar to view the application. Entering any other path may result in a "404 Not Found" error.
 
 ### Change Postcode
-If you desire to see data from a different post code you can open the "web-frontend" folder, 
-go to "front-end" folder.Then,find "src" folder,then from src to find "store" folder.
-In store folder, there is a folder called "modules".Click on it then you will see a file named restaurantStore.js
-In this file, on the line 26 you will see "const res = await axios.get('http://localhost:8080/restaurant/RM77EX')"
-You can change RM77EX to any valid UK postcode. Then save the file to restart the front end.
+To view data from a different postcode, navigate to web-frontend/front-end/src/store/modules and open the restaurantStore.js file. On line 26, change "RM77EX" to your desired UK postcode, then save the file and restart the front end to see the updated data.
 
 # Assumptions
-I was not sure if I should list out all the cuisines for a restaurant. Thus, I just displayed the cuisines in the form of badge.
+It was unclear whether to list all cuisines for each restaurant, so cuisines are currently displayed as badges.
 
 # Improvements
-There are a few things that I can improve to make this web app more robust.
-1. render all the data into the page by only displaying 10 restaurants in a page and use pagination to allow users to check more restaurants' data
-2. have a drop down list that allows users to display restaurants based on cuisine type or ratings
-3. have a search bar that allows users to manually enter a UK postcode and the backend can render data from any UK postcode
+Several enhancements could be made to improve the robustness of this web application:
+
+1. Render all the data onto the page, displaying only 10 restaurants at a time with pagination to allow users to view additional data.
+2. Include two dropdown lists that allows users to filter restaurants based on cuisine type and rating.
+3. Add a search bar enabling users to manually enter a UK postcode, with the backend rendering data based on the entered postcode.
