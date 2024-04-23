@@ -2,6 +2,7 @@ import React from "react"
 import "./nav.css"
 import { useNavigate } from "react-router-dom"
 
+// This is a nav bar that has Just Eat icon
 export default function Navigator(){
     const navigate = useNavigate()
     return (

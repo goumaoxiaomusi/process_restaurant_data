@@ -1,5 +1,6 @@
 import './index.css'
 
+// Any url path that does not end with /result will be treat as 404 page
 const NotFound = () => {
     return (<div class="fourOFour">
     <span class="container">

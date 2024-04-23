@@ -2,6 +2,11 @@ package com.justeat.pojo;
 
 import java.util.List;
 
+/*
+Create an object that match the data structure of cuisine in a restaurant object
+and also filter out the desired information: name, cuisines, rating, address
+so the controller can serialize and map the fetched JSON data onto the restaurant object
+ */
 public class Restaurant {
 	private String name;
 	private List<Cuisine> cuisines;

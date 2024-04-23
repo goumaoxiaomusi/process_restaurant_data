@@ -2,7 +2,9 @@ package com.justeat.pojo;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+return a list of restaurants with filtered data
+ */
 public class RestaurantResponse {
 	private List<Restaurant> restaurants;
 

@@ -1,3 +1,7 @@
+/*
+This set up the style and size of a container that will hold
+and display four data points
+*/
 .restaurant {
     border-radius: 0.8rem;
     border: 0.05rem solid #EAEAEA;
@@ -13,12 +17,13 @@
     box-sizing: border-box;
   }
 
+/* First col:hold name and address */
 .restaurant .col:first-child {
     flex: 3;
     margin-top: 0rem;
     margin-left: -0.5rem;
 }
-
+/* Seconf col: hold rating */
 .restaurant .col:last-child {
   flex: 1; 
   margin-top: 0rem;
@@ -28,6 +33,7 @@
   text-align: center;
 }
 
+/* First row in first col: hold name of restaurant */
 .restaurant .row:first-child{
     margin-top: 0.1rem;
     margin-left: 1rem;
@@ -36,6 +42,7 @@
     font-weight: bold;
 }
 
+/* Second row in first col: hold address of restaurant */
 .restaurant .row:last-child {
     margin-top: 0.1rem;
     margin-left: 1.7rem;
@@ -43,7 +50,7 @@
     font-size: 0.65rem;
     color: #979797;
 }
-
+/* Badge that is used to display cuisines of a restaurant */
 .restaurant .custom-badge { 
   color:#3bb8eefe; 
   font-weight: bold;

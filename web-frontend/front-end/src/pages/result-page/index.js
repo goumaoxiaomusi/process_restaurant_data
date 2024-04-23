@@ -6,6 +6,12 @@ import {useDispatch, useSelector} from 'react-redux'
 import { getRestaurantList } from "../../store/modules/restaurantStore"
 import { Outlet } from "react-router-dom"
 
+/*
+This is where all the components are rendered
+Data is retrieved from restaurantStore in this page and handled
+This page will have a Nav bar and also 2 stacks.
+In each stack, there are 5 Item elements that are fetched from the back end
+*/
 const Result = () => {
     const dispatch = useDispatch()
     const restaurantList = useSelector(state => state.restaurant.restaurantList);

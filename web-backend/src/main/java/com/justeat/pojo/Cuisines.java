@@ -2,6 +2,9 @@ package com.justeat.pojo;
 
 import java.util.List;
 
+/*
+Create an object that match the data structure of cuisines in a restaurant object
+ */
 public class Cuisines {
 	private List<Cuisine> cuisines;
 

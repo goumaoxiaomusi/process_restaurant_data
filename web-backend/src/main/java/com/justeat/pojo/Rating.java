@@ -1,5 +1,8 @@
 package com.justeat.pojo;
 
+/*
+Create an object that match the data structure of rating in a restaurant object
+ */
 public class Rating{
 	private float starRating;
 

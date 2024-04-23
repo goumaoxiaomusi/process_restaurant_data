@@ -15,6 +15,8 @@ public class WebConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
+		// Configuring CORS (Cross-Origin Resource Sharing) settings for all paths ("/**")
+		// Allowing all requests from the locally running front-end origin
 		registry.addMapping("/**").allowedOrigins("http://localhost:3000");
 	}
 }

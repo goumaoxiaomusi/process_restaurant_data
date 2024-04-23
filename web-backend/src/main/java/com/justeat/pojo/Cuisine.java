@@ -3,6 +3,9 @@ package com.justeat.pojo;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Create an object that match the data structure of cuisine in a restaurant object
+ */
 public class Cuisine{
 	private String name;
 
