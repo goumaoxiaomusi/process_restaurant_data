@@ -46,7 +46,7 @@ const Result = () => {
 
     const firstHalf = currentPageData.slice(0, 5);
     const secondHalf = currentPageData.slice(5, 10);
-    // console.log(currentPageData[0])
+    console.log(currentPageData[0])
 
 
     return (
