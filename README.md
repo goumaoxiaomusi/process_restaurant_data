@@ -1,14 +1,17 @@
+
 # JustEatTakeAway Web Assessment
+
 This project fetch restaurant data from a provided API https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{postcode}, filter the data received,
 leaving and displaying only with the name, addresss, cuisines, and rating of the restaurants. 
 
 {postcode} can be replaced by a valid UK postcode. In this project, I chose to use RM77EX as the postcode.
 This project consists of a front end and a back end. The front end is written in react and the back end is constructed with java springboot framework.
 
+**You can check out how data is displayed in the repository with "resultPageDemo.png" image.**
+
+
 
 ## Prerequisites
-Before you begin, ensure you have met the following requirements:
-
 1. Node.js: Download & Install Node.js and the npm package manager.
 2. Java Development Kit (JDK): You need JDK 17 or above to run the backend service. Download JDK 17+. Here is a address that you can download suitable JDK:
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
@@ -16,7 +19,6 @@ https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 
 # Getting Started
 These instructions will get your copy of the project up and running on your local machine for development and testing purposes.
-
 ## Installing
 First, clone the repository to your local machine:
 git clone https://github.com/goumaoxiaomusi/process_restaurant_data.git
@@ -70,8 +72,3 @@ There are a few things that I can improve to make this web app more robust.
 1. render all the data into the page by only displaying 10 restaurants in a page and use pagination to allow users to check more restaurants' data
 2. have a drop down list that allows users to display restaurants based on cuisine type or ratings
 3. have a search bar that allows users to manually enter a UK postcode and the backend can render data from any UK postcode
-
-
-
-
-
