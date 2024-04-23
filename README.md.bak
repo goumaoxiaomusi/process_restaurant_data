@@ -55,6 +55,12 @@ If your web browser does not automatically start, then after you type in npm run
 please open your browser and type in http://localhost:3000 or http://localhost:3000/result. This will lead you to the page that display the content.
 Entering any other path can lead to 404 not found page such as http://localhost:3000/a.
 
+###Change Postcode
+If you desire to see data from a different post code you can open the "web-frontend" folder, 
+go to "front-end" folder.Then,find "src" folder,then from src to find "store" folder.
+In store folder, there is a folder called "modules".Click on it then you will see a file named restaurantStore.js
+In this file, on the line 26 you will see "const res = await axios.get('http://localhost:8080/restaurant/RM77EX')"
+You can change RM77EX to any valid UK postcode. Then save the file to restart the front end.
 
 #Assumptions
 I was not sure if I should list out all the cuisines for a restaurant. Thus, I just displayed the cuisines in the form of badge.
